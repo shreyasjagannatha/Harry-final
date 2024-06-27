@@ -1,0 +1,30 @@
+<div *ngIf="!loaddetails">
+<div class="input-container">
+    <h2 >Filters</h2>
+
+  <div class="input-group">
+    <label for="title">Title</label>
+    <input id="title" [(ngModel)]="title" (ngModelChange)="dataChanged($event)"type="text" placeholder="Enter title" />
+  </div>
+  <div class="input-group">
+    <label for="release-year">Release Year</label>
+    <input id="release-year" [(ngModel)]="year"  (ngModelChange)="dataChanged($event)" type="text" placeholder="Enter release year" />
+  </div>
+</div>
+<ul class="movie-list">
+  <li *ngFor="let movie of filteredMovies">
+    <div class="movie-content">
+    <strong>{{ movie.title }}</strong>
+    <br>
+    <br>
+    Release Date: {{ movie.release_date }}
+    
+    Budget: {{ movie.budget|customcurrency  }}
+
+    Duration:{{ movie.duration| timeminute }}
+  </div>
+    <button class="details-button" (click)="viewDetails(movie)">Details</button>
+   
+  </li>
+</ul>
+</div>

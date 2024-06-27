@@ -1,0 +1,44 @@
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+  }
+ 
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  label {
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .movie-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc; /* Add a border between list items */
+  }
+
+  .details-button {
+    float: right; /* Float the button to the right */
+    margin-top: -20px; /* Adjust button position */
+    background-color: lightgray;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  

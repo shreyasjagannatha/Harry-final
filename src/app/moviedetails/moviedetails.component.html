@@ -1,0 +1,23 @@
+<div *ngIf="!loaddetails">
+  <div class="movie-details-container">
+      <button class="back-button" (click)="gotomovies()">Back</button>
+  
+      <div class="movie-poster">
+          <h1>{{ movie.title }}</h1>
+          <img [src]="movie.poster" alt="{{ movie.title }}"/>
+            <p><strong>Summary:</strong> {{ movie.summary }}</p>
+        </div>
+        
+        <div class="movie-details">
+          <p><strong>Box Office:</strong> {{ movie.box_office |customcurrency }}</p>
+          <p><strong>Budget:</strong> {{ movie.budget|customcurrency   }}</p>
+          <p><strong>Duration:</strong> {{ movie.duration | timeminute }}</p>
+      
+          <p><strong>Producers:</strong> {{ movie.producers }}</p>
+          <p><strong>Cinematographers:</strong> {{ movie.cinematographers  }}</p>
+          
+        </div>
+  
+  </div>
+  
+  </div>

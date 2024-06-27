@@ -1,0 +1,39 @@
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  
+  }
+
+  .back-button {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .movie-poster img {
+
+    float: left;
+    max-width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  .movie-details {
+    text-align: left;
+    flex: 1;
+  }
+
+  .details-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+
+  
